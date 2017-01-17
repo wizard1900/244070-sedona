@@ -1,6 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Igor Suchkov](https://up.htmlacademy.ru/htmlcss/16/user/244070).
+* Наставник: [Иван Жадаев](https://up.htmlacademy.ru/htmlcss/16/user/58078).
 
 ---
 
