@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Отели Седоны</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и видео</a>
+          </li>
+          <li>
+            <div class="logo">
+              <img src="img/logo.png" width="140" height="75" alt="Седона - логотип">
+            </div>
+          </li>
+          <li>
+            <a href="#">Карта штата</a>
+          </li>
+          <li>
+            <a href="#">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="find-hotel-advance-wrapper">
+        <div class="main-container">
+          <form action="*">
+            <div class="hotel-advance-form-left">
+              <div class="hotel-advance-form-title">
+                Инфраструктура:
+              </div>
+              <input type="checkbox" name="pool" checked>Бассейн
+              <input type="checkbox" name="parking" checked>Парковка
+              <input type="checkbox" name="wifi" checked>WI-FI
+            </div>
+            <div class="hotel-advance-form-middle">
+              <div class="hotel-advance-form-title">
+                Тип жилья:
+              </div>
+              <input type="checkbox" name="hotel" checked>Гостиницы
+              <input type="checkbox" name="motel" checked>Мотель
+              <input type="checkbox" name="apart" checked>Апартаменты
+            </div>
+            <div class="hotel-advance-form-right">
+                <div class="hotel-advance-form-title">
+                  Стоимость в сутки (Р):
+                </div>
+                <div class="hotel-price">
+                  <label for="min-price"></label>От
+                  <input type="text" name="min-price" id="min-price">
+                </div>
+                <div class="hotel-price">
+                  <label for="max-price"></label>До
+                  <input type="text" name="max-price" id="max-price">
+                </div>
+                <div class="price-range">
+                  <!-- Ползунок в макете нестандартный,   пока не представляю, как его лучше реализовать -->
+                  <input type="range" min="0" max="3000" step="100" value="50">
+                </div>
+                <div class="hotel-advance-form-button">
+                  <input type="submit" value="Показать">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      <div class="main-container">
+        <div class="result-title">
+          <div class="result-title-number">
+            Найдено: 3
+          </div>
+          <div class="result-title-sort-name">
+            Сортировка:
+          </div>
+          <div class="result-title-sort">
+            <a href="">По цене:</a>
+          </div>
+          <div class="result-title-sort">
+            <a href="">По типу:</a>
+          </div>
+          <div class="result-title-sort">
+            <a href="#">По рейтингу:</a>
+          </div>
+          <div class="result-order">
+            <a href="#">
+              <img src="#" alt="По возрастанию:">
+            </a>
+            <a href="#">
+              <img src="#" alt="По убыванию:">
+            </a>
+          </div>
+        </div>
+        <div class="result-item">
+          <div class="result-item-photo">
+            <img src="#" alt="Фото жилья">
+          </div>
+          <div class="result-item-title">
+            Amara resort & SPA
+          </div>
+          <div class="result-item-description-wrapper">
+            <div class="result-item-description">
+              Гостиница
+            </div>
+            <div class="result-item-description">
+              от 4000 р.
+            </div>
+            <div class="result-button-wrapper">
+              <a href="#">
+                <div class="result-button-details">
+                  <span class="result-button-value">Подробнее</span>
+                </div>
+              </a>
+              <a href="#">
+                <div class="result-button-booking">
+                  <span class="result-button-value">Забронировать</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="result-item">
+          <div class="result-item-photo">
+            <img src="#" alt="Фото жилья">
+          </div>
+          <div class="result-item-title">
+            Desert quall inn
+          </div>
+          <div class="result-item-description-wrapper">
+            <div class="result-item-description">
+              Мотель
+            </div>
+            <div class="result-item-description">
+              от 3000 р.
+            </div>
+            <div class="result-button-wrapper">
+              <a href="#">
+                <div class="result-button-details">
+                  <span class="result-button-value">Подробнее</span>
+                </div>
+              </a>
+              <a href="#">
+                <div class="result-button-booking">
+                  <span class="result-button-value">Забронировать</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div><div class="result-item">
+          <div class="result-item-photo">
+            <img src="#" alt="Фото жилья">
+          </div>
+          <div class="result-item-title">
+            Villas at poco diablo
+          </div>
+          <div class="result-item-description-wrapper">
+            <div class="result-item-description">
+              Апартаменты
+            </div>
+            <div class="result-item-description">
+              от 2000 р.
+            </div>
+            <div class="result-button-wrapper">
+              <a href="#">
+                <div class="result-button-details">
+                  <span class="result-button-value">Подробнее</span>
+                </div>
+              </a>
+              <a href="#">
+                <div class="result-button-booking">
+                  <span class="result-button-value">Забронировать</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-label">
+        <a> #VISITSEDONA</a>
+      </div>
+      <div class="footer-social">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Youtube</a>
+      </div>
+      <div class="footer-copyright">
+        <span>Website by</span>
+        <div class="copiright-image">
+          <img src="#" width="116" height="38" alt="HTML Academy">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
