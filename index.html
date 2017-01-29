@@ -3,22 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Добро пожаловать в Седону</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <ul>
+    <header class="main-container">
+      <nav class="main-navigation clearfix">
+        <ul class="nav-left">
+
           <li>
             <a href="#">Информация</a>
           </li>
           <li>
             <a href="#">Фото и видео</a>
           </li>
-          <li>
-            <div class="logo">
-              <img src="img/logo.png" width="140" height="75" alt="Седона - логотип">
-            </div>
-          </li>
+        </ul>
+        <ul class="nav-right">
           <li>
             <a href="#">Карта штата</a>
           </li>
@@ -26,12 +26,20 @@
             <a href="#">Гостиницы</a>
           </li>
         </ul>
+
+        <div class="logo">
+          <a>
+            <img src="img/logo.png" width="" height="" alt="Седона - логотип">
+          </a>
+        </div>
+
       </nav>
+
     </header>
-    <main>
+    <main class="main-container">
       <div class="banner-wrapper">
         <div class="banner-description-container">
-          <img src="#" width="475" height="360" alt="Добро пожаловать в Седону">
+          <img src="img/banner-text.png" width="" height="" alt="Добро пожаловать в Седону">
         </div>
       </div>
       <div class="advantages-container">
@@ -41,66 +49,72 @@
             Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </div>
         </div>
-        <div class="advantages-wrapper">
+        <div class="advantages-wrapper first">
           <section class="advantage">
-            <div class=advantage-title> Настоящий городок </div>
-            <div class="advantage-number">-№1-</div>
-            <div class="advantage-text">Седона не аттракцион для туристов, там течет своя жизнь</div>
+            <div class="advantages-title"> Настоящий городок </div>
+            <div class="advantages-description">-№1- </div>
+            <div class="advantages-description">
+              Седона не аттракцион для туристов, <br>
+              там течет своя жизнь
+            </div>
           </section>
         </div>
-        <div class="advantage-extention-wrapper">
+        <div class="advantage-extention-wrapper clearfix">
           <section class="advantage-extention">
             <div class="advantage-extention-image">
-              <img src="#" width="60" height="60" alt="Жилье">
+              <img src="img/dwelling-icon.png" width="" height="" alt="Жилье">
             </div>
-            <div class="advantage-extention-title">Жилье</div>
-            <div class="advantage-extention-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
-          </section>
-          <section class="advantage-extention">
-            <div class="advantage-extention-image">
-              <img src="#" width="60" height="60" alt="Еда">
-            </div>
-            <div class="advantage-extention-title">Еда</div>
-            <div class="advantage-extention-text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</div>
+            <div class="advantages-title extention">Жилье</div>
+            <div class="advantages-description extention">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
           </section>
           <section class="advantage-extention">
             <div class="advantage-extention-image">
-              <img src="#" width="60" height="60" alt="Сувениры">
+              <img src="img/food-icon.png" width="" height="" alt="Еда">
             </div>
-            <div class="advantage-extention-title">Сувениры</div>
-            <div class="advantage-extention-text">Не только китайского, но и местного производства!</div>
+            <div class="advantages-title extention">Еда</div>
+            <div class="advantages-description extention">
+              Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</div>
+          </section>
+          <section class="advantage-extention">
+            <div class="advantage-extention-image">
+              <img src="img/souvenir-icon.png" width="" height="" alt="Сувениры">
+            </div>
+            <div class="advantages-title extention">Сувениры</div>
+            <div class="advantages-description extention">Не только китайского, но и местного производства!</div>
           </section>
         </div>
-        <div class="advantages-wrapper">
-          <section class="advantage">
-            <div class=advantage-title>Там есть мост дьявола</div>
-            <div class="advantage-number">-№2-</div>
-            <div class="advantage-text">Да, по нему можно пройти! Если конечно вы осмелитесь.</div>
+        <div class="advantages-wrapper second">
+          <section class="advantage second">
+            <div class="advantages-title">Там есть мост дьявола</div>
+            <div class="advantages-description">-№2-</div>
+            <div class="advantages-description">Да, по нему можно пройти! Если конечно вы осмелитесь.</div>
           </section>
         </div>
-        <div class="advantages-wrapper">
-          <section class="advantage">
-            <div class=advantage-title>Небольшая площадь</div>
-            <div class="advantage-number">-№3-</div>
-            <div class="advantage-text">Все достопримечательности находятся очень близко.</div>
+        <div class="advantages-wrapper third clearfix">
+          <section class="advantage third">
+            <div class="advantages-title">Небольшая площадь</div>
+            <div class="advantages-description">-№3-</div>
+            <div class="advantages-description">Все достопримечательности находятся очень близко.</div>
           </section>
-          <section class="advantage">
-            <div class=advantage-title>Красивая дорога</div>
-            <div class="advantage-number">-№4-</div>
-            <div class="advantage-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
+          <section class="advantage third">
+            <div class="advantages-title">Красивая дорога</div>
+            <div class="advantages-description">-№4-</div>
+            <div class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
           </section>
-          <section class="advantage">
-            <div class=advantage-title>Мало туристов</div>
-            <div class="advantage-number">-№5-</div>
-            <div class="advantage-text">Большинство едет в гранд каньон и толпится там.</div>
+          <section class="advantage third">
+            <div class="advantages-title">Мало туристов</div>
+            <div class="advantages-description">-№5-</div>
+            <div class="advantages-description">Большинство едет в гранд каньон и толпится там.</div>
           </section>
         </div>
       </div>
+
       <div class="find-hotels-container">
+
         <div class="hotels-tittle-wrapper">
           <div class="hotels-title">Заинтересовались?</div>
           <div class="hotels-title-description">
-            Укажите предполагаемые даты поездки,
+            Укажите предполагаемые даты поездки, <br>
             и мы покажем вам лучшие предложения гостиниц в Cедоне
           </div>
         </div>
@@ -108,22 +122,23 @@
           <div class="find-hotel-form-title">Поиск гостиницы в Cедоне</div>
           <div class="find-hotel-form">
             <div class="find-hotel-form-container">
-              <form>
+
+              <form action="#" method="get">
                 <div class="find-hotel-form-row">
-                  <label for="date_a">Дата заезда</label>
-                  <input type="text" name="arriving-date" id="date_a">
+                  <label for="date_a">Дата заезда:</label>
+                  <input type="text" name="arriving-date" id="date_a" value="24 апреля 2017">
                 </div>
                 <div class="find-hotel-form-row">
-                  <label for="date_d">Дата выезда</label>
-                  <input type="text" name="departure-date" id="date_d">
+                  <label for="date_d">Дата выезда:</label>
+                  <input type="text" name="departure-date" id="date_d" value="4 июля 2017">
                 </div>
                 <div class="find-hotel-form-row">
                   <div class="find-hotel-form-half-col">
-                    <label for="adult">Взрослые</label>
+                    <label for="adult">Взрослые:</label>
                     <input type="number" name="adult" id="adult">
                   </div>
                   <div class="find-hotel-form-half-col">
-                    <label for="kids">Дети</label>
+                    <label class="kidds" for="kids">Дети:</label>
                     <input type="number" name="kids" id="kids">
                   </div>
                 </div>
