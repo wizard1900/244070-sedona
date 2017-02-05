@@ -12,34 +12,34 @@ body {
   min-width: 1280px;
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
   text-transform: uppercase;
   /*background: url(../img/sedona-index-1200.jpg) no-repeat 50% 0;  */
   background-size: 1280px auto;
+  background-color: #f2f2f2;
 }
 
 .main-header {
   width: 1200px;
   height: 55px;
-  outline: 2px solid red;
+  background-color: white;
  }
 
-.main-container {
+.main-contaner {
   /* Только для оформления сетки */
   width: 1200px;
   margin: 0 auto;
-  background-color: rgba(200,200,200,0.7) ;
-  outline: 2px solid red;
-}
+ }
+
+main {
+  background-color: white;
+ }
 
 .center {
   width: 1056px;
   margin: 0 auto;
-  outline: 2px solid black;
 }
 
 .nav-left, .nav-right {
-  background-color: rgba(0,128,128,0.5);
   width: 400px;
   margin: 0;
   padding: 0;
@@ -94,9 +94,7 @@ body {
 }
 
 .banner-wrapper {
-  /*background-color: rgba(0,128,128,0.5); */
   height: 510px;
-  outline: 1px solid rgba(0,0,0,1);
   background: url(../img/banner-mask.png) no-repeat 0 bottom, url(../img/banner-photo.jpg) no-repeat;
   margin: 0 auto;
   width: 100%;
@@ -169,7 +167,7 @@ body {
 }
 
 .advantage-extention-wrapper {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 .advantage-extention {
@@ -206,18 +204,14 @@ body {
   padding-right: 50px;
   text-align: center;
   margin-top: 20px;
-  /*width: 290px;
-  margin-top: 25px;  */
 }
 
 
 .advantages-wrapper.second{
   background: url("../img/bridge.png") no-repeat left 0;
-
 }
 
 .advantage.second {
-  /*margin-left: 800px; */
   float: right;
 }
 
@@ -265,23 +259,22 @@ body {
   text-align: center;
 }
 
-
-
 .find-hotels-container {
   width: 1200px;
-  outline: 2px solid blue;
-  background: url(../img/map.jpg) center bottom no-repeat;
   padding-bottom: 55px;
+  position: relative;
+}
 
+.map {
+  position: absolute;
+  bottom:  -130px;
 }
 
 .hotels-title-wrapper {
   width: 576px;
-  outline: 2px solid green;
   margin: 0 auto;
   margin-top: 0px;
   padding-top: 55px;
-
 }
 
 .hotels-title {
@@ -291,7 +284,6 @@ body {
   font-weight: 700;
   text-align: center;
   margin: 0 auto;
-
 }
 
 .hotels-title-description {
@@ -311,8 +303,9 @@ body {
   margin: 0 auto;
   margin-top: 50px;
   background: white;
-  outline: 4px solid black;
   padding-bottom: 55px;
+  position: relative;
+  z-index: 2;
 }
 
 .find-hotel-form-title {
@@ -329,24 +322,17 @@ body {
 
 .find-hotel-form-container {
   width: 460px;
-
   font-size: 14px;
   margin: 0 auto;
   padding-top: 50px;
-  background-color: rgba(255,200,255,0.7);
-  outline: 2px solid green;
 }
 
 .find-hotel-form-row {
   width: 460px;
-
-  background-color: rgba(100,200,255,0.1);
   margin-bottom: 30px;
-
   line-height: 38px;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
-  outline: 2px solid blue;
 }
 
 .find-hotel-form-row:last-child {
@@ -356,7 +342,6 @@ body {
 .find-hotel-label {
   display: inline-block;
   width: 110px;
-  background: pink;
 }
 
 .find-hotel-label.half {
@@ -401,9 +386,14 @@ body {
   margin-top: 25px;
 }
 
+.main-contaner footer {
+
+}
+
 footer {
-  outline: 3px solid blue;
   height: 120px;
+  background-color: rgba(249,251,246,0.9);
+  position: relative;
 }
 
 .footer-label, .footer-social, .footer-copyright {
@@ -433,7 +423,6 @@ footer {
 /* Страница hotels.html  */
 
 .select-hotel-wrapper {
-  outline: 2px solid blue;
   background: url(../img/filter-background.jpg) no-repeat;
   height: 218px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -444,7 +433,6 @@ footer {
 }
 
 .select-hotel-left {
-  outline: 2px solid red;
   width: 255px;
   height: 218px;
   float: left;
@@ -458,7 +446,6 @@ footer {
 }
 
 .select-hotel-right {
-  outline: 3px solid blue;
   width: 328px;
   height: 218px;
   float: right;
@@ -466,21 +453,18 @@ footer {
 
 .hotel-price-container {
   width: 318px;
-  outline: 1px solid red;
-  background: #999999;
   float: right;
 }
 
 .hotel-price-row {
-  outline: 1px solid red;
-  background: yellow;
   text-align: center;
+  border: 2px solid white;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .hotel-price {
   display: inline-block;
-  outline: 1px solid red;
-  background: green;
   width: 155px;
   text-align: center;
 }
@@ -488,7 +472,6 @@ footer {
 .price-range {
   width: 318px;
   height: 40px;
-  background: pink;
 }
 
 .select-hotel-btn-wrapper {
@@ -507,13 +490,10 @@ footer {
 }
 
 .result-wrapper {
-  outline: 3px solid black;
-
+  background: #fefefe;
 }
 
 .result-title {
-  outline: 3px solid green;
-  background: white;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 12px;
   line-height: 18px;
@@ -525,7 +505,6 @@ footer {
 
 .result-title-number {
   width: 165px;
-  background: yellow;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -535,15 +514,12 @@ footer {
 
 .result-title-sort-parametr {
   width: 115px;
-  background: cyan;
   padding-top: 4px;
   float: left;
 }
 
 .sort-items {
   width: 300px;
-  background: gold;
-  outline: 2px solid red;
   padding-top: 4px;
   float: left;
 }
@@ -600,7 +576,6 @@ footer {
 
 .result-item-wrapper {
   height: 150px;
-  background: pink;
   border: 1px solid #e5e5e5;
   height: 90px;
   padding-top: 30px;
@@ -610,14 +585,12 @@ footer {
 .result-item-photo  {
   width: 135px;
   height: 90px;
-  outline: 2px solid red;
   float: left;
 }
 
 .result-item-description-wrapper {
   width: 260px;
   height: 90px;
-  outline: 2px solid red;
   margin-left: 30px;
   float: left;
 }
@@ -625,7 +598,6 @@ footer {
 .result-item-rating-wrapper {
   width: 110px;
   height: 90px;
-  outline: 2px solid red;
   float: right;
   text-align: right;
   font-family: "PT Sans", Arial, sans-serif;
@@ -650,7 +622,6 @@ footer {
 .result-item-description-type {
   display: inline-block;
   width: 110px;
-  outline: 2px solid blue;
   font-size: 14px;
   line-height: 21px;
   margin-right: 5px;
@@ -660,7 +631,6 @@ footer {
 .result-item-description-price {
   display: inline-block;
   width: 145px;
-  outline: 2px solid blue;
   font-size: 14px;
   line-height: 21px;
 }
@@ -677,8 +647,6 @@ footer {
   display: inline-block;
   width: 110px;
   height: 27px;
-  outline: 2px solid blue;
-
   font-size: 14px;
   line-height: 27px;
   margin-right: 5px;
@@ -692,8 +660,6 @@ footer {
   display: inline-block;
   width: 145px;
   height: 27px;
-  outline: 2px solid blue;
-
   font-size: 14px;
   line-height: 27px;
   background-color: #766357;
@@ -703,7 +669,6 @@ footer {
 
 .rating-star {
   color: #81b3d2;
-  background-color: yellow;
   font-size: 21px;
   line-height: 27px;
   font-weight: 700;
@@ -720,132 +685,3 @@ footer {
   padding-top: 3px;
   margin-top: 35px;
 }
-
-
-
-
-
-
-
-
-
-/*======================================
- Системное оформление - не изменять
-=======================================*/
-/*
-body {
-  padding: 3px;
-}
-
-body > *,
-body > * > *,
-body > * > * > * {
-  position: relative;
-}
-
-body > *::before,
-body > * > *::before,
-body > * > * > *::before {
-  content: "";
-  position: absolute;
-
-  height: 24px;
-  padding: 2px 5px;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Courier New", monotype;
-  white-space: nowrap;
-}
-
-body > *::before {
-  top: -3px;
-  left: -3px;
-}
-
-body > * > *::before {
-  top: -3px;
-  left: -3px;
-}
-
-body > * > * > *::before {
-  top: 0;
-  left: 0;
-}
-
-body > * {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-}
-
-body > *::before {
-  color: white;
-
-  background: green;
-}
-
-body > * > * {
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
-}
-
-body > * > *::before {
-  color: white;
-
-  background: rgb(255, 45, 82);
-}
-
-body > * > * > * {
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-
-}
-
-body > * > * > *::before {
-  color: black;
-
-  background: rgb(234, 255, 45);
-}
-
-.main-header::before {
-  content: ".main-header";
-}
-
-.container::before {
-  content: ".container";
-}
-
-.main-header .container::before {
-  top: auto;
-  bottom: -28px;
-}
-
-.main-navigation::before {
-  content: ".main-navigation";
-}
-
-.user-block::before {
-  content: ".user-block";
-}
-
-.index-logo::before {
-  content: ".index-logo";
-}
-
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
