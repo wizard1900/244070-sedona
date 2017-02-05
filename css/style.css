@@ -432,6 +432,10 @@ footer {
   line-height: 21px;
 }
 
+.select-hotel-wrapper.center {
+  background: transparent;
+}
+
 .select-hotel-left {
   width: 255px;
   height: 218px;
