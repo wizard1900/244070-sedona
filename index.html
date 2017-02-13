@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="main-contaner">
-      <header class="main-header">
+      <header class="main-header clearfix">
         <nav class="center clearfix">
           <ul class="nav-left">
             <li>
@@ -33,11 +33,11 @@
           </div>
         </nav>
       </header>
-      <main>
+      <main class="main-content">
         <div class="banner-wrapper"></div>
         <div class="advantages-container">
-        <div class="advantages-title-wrapper">
-            <h1 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <div class="advantages-title-wrapper">
+            <h1 class="advantages-title">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</h1>
             <div class="advantages-description">
               Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
             </div>
@@ -95,7 +95,7 @@
               <div class="advantages-description third">Большинство едет в гранд каньон и толпится там.</div>
             </section>
           </div>
-          </div>
+        </div>
         <div class="find-hotels-container">
           <div class="hotels-title-wrapper">
             <div class="hotels-title">Заинтересовались?</div>
@@ -104,27 +104,33 @@
               и мы покажем вам лучшие предложения гостиниц в Cедоне
             </div>
           </div>
+          <img class="map" src="img/map.jpg" width="1200" height="593" alt="Карта">
+
           <div class="find-hotel-form-wrapper">
-            <div class="find-hotel-form-title">Поиск гостиницы в Cедоне</div>
-            <div class="find-hotel-form">
+          <button class="find-hotel">Поиск гостиницы в Cедоне</button>
+            <div class="modal-hotel-form">
               <div class="find-hotel-form-container">
                 <form action="#" method="get">
                   <div class="find-hotel-form-row">
                     <label for="date_a" class="find-hotel-label">Дата заезда:</label>
-                    <input type="text" name="arriving-date" id="date_a" value="24 апреля 2017">
+                    <input class="input-data" type="text" name="arriving-date" id="date_a" placeholder="24 апреля 2017">
+                    <div class="form-calendar"></div>
                   </div>
                   <div class="find-hotel-form-row">
                     <label for="date_d" class="find-hotel-label">Дата выезда:</label>
-                    <input type="text" name="departure-date" id="date_d" value="4 июля 2017">
+                    <input class="input-data" type="text" name="departure-date" id="date_d" placeholder="4 июля 2017">
+                    <div class="form-calendar"></div>
                   </div>
                   <div class="find-hotel-form-row">
                     <div class="find-hotel-form-half-col">
-                      <label for="adult" class="find-hotel-label">Взрослые:</label>
-                      <input type="text" name="adult" id="adult">
+                      <label for="adult" class="find-hotel-label">Взрослые:</label> <div class="adult-minus">-  </div>
+                      <input class="input-data" type="text" name="adult" id="adult" placeholder="2">
+                      <div class="adult-plus">+</div>
                     </div>
                     <div class="find-hotel-form-half-col">
-                      <label for="kids" class="find-hotel-label half">Дети:</label>
-                      <input type="text" name="kids" id="kids">
+                      <label for="kids" class="find-hotel-label half">Дети:</label><div class="kids-minus">-</div>
+                      <input class="input-data" type="text" name="kids" id="kids" placeholder="0">
+                      <div class="kids-plus">+</div>
                     </div>
                   </div>
                   <div class="find-hotel-form-row">
@@ -133,26 +139,27 @@
                 </form>
               </div>
             </div>
-            </div>
-          <div class="map">
-            <img src="img/map.jpg" width="1200" height="593" alt="Карта">
           </div>
+
         </div>
       </main>
-      <footer class="clearfix">
+      <footer class="footer-index clearfix">
         <div class="footer-label">
-          <a> #VISITSEDONA</a>
+          <a href="#"> #VISITSEDONA</a>
         </div>
         <div class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Youtube</a>
+          <a class="social-btn social-btn-yt" href="#">Youtube</a>
         </div>
         <div class="footer-copyright">
-          <span>Website by</span>
-        <div class="htmlacademy"></div>
+          <a href="http://htmlacademy.ru">
+            <span>Website by</span>
+            <span class="htmlacademy"></span>
+          </a>
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
