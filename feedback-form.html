@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Добро пожаловать в Седону</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style-min.css">
+  </head>
+  <body>
+    <div class="main-contaner">
+      <header class="main-header clearfix">
+        <nav class="center clearfix">
+          <ul class="nav-left">
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+          </ul>
+          <ul class="nav-right">
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="hotels.html">Гостиницы</a>
+            </li>
+          </ul>
+          <div class="logo">
+            <a href="index.html">
+              <img src="img/logo.png" width="138" height="70" alt="Седона - логотип">
+            </a>
+          </div>
+        </nav>
+      </header>
+      <main class="main-content">
+        <div class="find-hotels-container">
+          <div class="hotels-title-wrapper">
+            <div class="hotels-title">Заинтересовались?</div>
+            <div class="hotels-title-description">
+              Укажите предполагаемые даты поездки, <br>
+              и мы покажем вам лучшие предложения гостиниц в Cедоне
+            </div>
+          </div>
+          <img class="map" src="img/map.jpg" width="1200" height="593" alt="Карта">
+          <div class="find-hotel-form-wrapper">
+            <a class="find-hotel">Поиск гостиницы в Cедоне</a>
+            <div class="modal-hotel-form">
+              <div class="find-hotel-form-container">
+                <form action="#" method="get">
+                  <div class="find-hotel-form-row">
+                    <label for="date_a" class="find-hotel-label">Дата заезда:</label>
+                    <input class="input-data" type="text" name="arriving-date" id="date_a" placeholder="24 апреля 2017">
+                    <div class="form-calendar"></div>
+                  </div>
+                  <div class="find-hotel-form-row">
+                    <label for="date_d" class="find-hotel-label">Дата выезда:</label>
+                    <input class="input-data" type="text" name="departure-date" id="date_d" placeholder="4 июля 2017">
+                    <div class="form-calendar"></div>
+                  </div>
+                  <div class="find-hotel-form-row">
+                    <div class="find-hotel-form-half-col">
+                      <label for="adult" class="find-hotel-label">Взрослые:</label>
+                      <div class="find-hotel-form-num-field">
+                        <button class="num-minus">-</button>
+                        <input class="input-data" type="number" min="1" name="adult" id="adult" placeholder="2">
+                        <button class="num-plus">+</button>
+                      </div>
+                    </div>
+                    <div class="find-hotel-form-half-col">
+                      <label for="kids" class="find-hotel-label half">Дети:</label>
+                      <div class="find-hotel-form-num-field">
+                        <button class="num-minus">-</button>
+                        <input class="input-data" type="number" min="0" name="kids" id="kids" placeholder="0">
+                        <button class="num-plus">+</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="find-hotel-form-row">
+                    <input type="submit" class="btn-find" value="Найти">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer-index clearfix">
+        <div class="footer-label">
+          <a href="#"> #VISITSEDONA</a>
+        </div>
+        <div class="footer-social">
+          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-yt" href="#">Youtube</a>
+        </div>
+        <div class="footer-copyright">
+          <a href="http://htmlacademy.ru">
+            <span>Website by</span>
+            <span class="htmlacademy"></span>
+          </a>
+        </div>
+      </footer>
+    </div>
+   </body>
+</html>
